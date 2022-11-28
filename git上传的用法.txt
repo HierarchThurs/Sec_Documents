@@ -1,0 +1,44 @@
+GitHub上链接已有的仓库时通过SSH的公开密钥认证，
+通过以下命令创建SSH Key。
+
+$ ssh-keygen -t rsa -C "your_email@example.com" （此邮箱为创建账户时的邮箱）
+balabalabalabala(/Users/your_user_directory/.ssh/id_rsa):  [回车键]
+Enter passphrase (empty for no passphrase):  [输入密码] （此密码为个人私钥）
+Enter same passphrase again: [再次输入密码]（此次是确认个人私钥的密码）
+
+id_rsa文件是私有密钥，id_rsa.pub文件是公开密钥。
+
+在GitHub账户中Add SSH Key，   Title中输入此电脑信息，Key中粘贴id_rsa.pub文件里的内容。
+
+id_rsa.pub文件可以在    C:/用户/用户名/.ssh   中找到
+或者
+$ cat -/.ssh/id_rsa.pub 
+ssh-rsa [公开密钥的内容] your_email@example.com
+ 
+ 尝试与仓库通信：
+ $ ssh -T git@github.com
+ bala bala bala (yes/no)?  [输入yes]
+ 出现一下结果即为成功：
+ Hi your_username! You've ba la ba la
+
+
+之后克隆仓库
+$ git clone git@github.com:your_github_name/repository_name.git
+
+克隆成功后，新编写的代码需要存放在相应的仓库文件中，编写成功后，在仓库文件夹中运行git bash
+或在linux中的仓库文件夹中打开终端
+接下来上传代码
+$ git add file.language
+$ git commit -m "引号中添加对这次更改的描述"
+$ git push
+以上操作中需要输入相关密码，此密码为个人私钥，Linux中可能还需要输入账户密码
+
+$ git log 
+可以查看提交日志
+
+
+
+$ git config --global user.name "引号中输入用户名，此用户名为上传代码的用户名，并非一定是GitHub用户名"
+$ git config --global user.email "引号中为上传代码的邮箱，性质同上"
+$ ~/.gitconfig 
+可以输出设置文件
