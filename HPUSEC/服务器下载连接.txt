@@ -1,0 +1,23 @@
+工具大礼包
+http://218.196.241.232:81/CTFtools.zip
+
+kali 2022.1
+http://218.196.241.232:81/kali-linux-2022.1-installer-amd64.iso
+
+Ubuntu Server 18.04.6
+http://218.196.241.232:81/ubuntu-18.04.6-live-server-amd64.iso
+
+Ubuntu Server 20.04.4
+http://218.196.241.232:81/ubuntu-20.04.4-live-server-amd64.iso
+
+Ubuntu Server 22.04.1
+http://218.196.241.232:81/ubuntu-22.04.1-live-server-amd64.iso
+
+Ubuntu desktop 22.04.1
+http://218.196.241.232:81/ubuntu-22.04.1-desktop-amd64.iso
+
+Windows 7 ultimate sp1
+http://218.196.241.232:81/cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso
+
+Windows 10 21H2
+http://218.196.241.232:81/Windows10.iso
