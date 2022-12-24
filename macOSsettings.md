@@ -55,3 +55,22 @@ git --version
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
 ```
 
+## 多开
+
+```terminal
+open -n <app路径>
+```
+
+## mysql
+
+安装好mysql桌面端后
+
+```terminal
+sudo vim ~/.zshrc
+
+export PATH=${PATH}:/usr/local/mysql/bin
+
+source ~/.zshrc
+# 即可命令行使用mysql
+```
+
